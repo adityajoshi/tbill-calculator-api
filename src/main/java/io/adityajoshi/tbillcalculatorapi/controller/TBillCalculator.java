@@ -21,6 +21,7 @@ public class TBillCalculator {
         double v = tBillService.calculatePurchaseValue(params.getTotalAmount(),
                 params.getDiscountYield(), params.getTenor());
 
+        System.out.println("Sharing output as :: " + v);
         return ResponseEntity.ok(String.valueOf(v));
     }
 
